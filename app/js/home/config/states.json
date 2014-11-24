@@ -7,6 +7,38 @@
         "mixins": ["state"],
         "resolve": {
             "features": "featuresResolver"
+        },
+        "views":{
+            "content@home":{
+                "path":"/content",
+                "templateUrl":"content.html"
+
+            },
+            "child@home":{
+                "path":"/child",
+                "templateUrl":"child.html"
+            }
+        }
+    },
+
+    "content": {
+        "path": "/content",
+        "templateUrl": "home.html",
+        "controller": "HomeCtrl",
+        "mixins": ["state"],
+        "resolve": {
+            "features": "featuresResolver"
+        },
+        "views":{
+            "content@content":{
+                "path":"/content",
+                "templateUrl":"content.html"
+
+            },
+            "child@content":{
+                "path":"/child",
+                "templateUrl":"contentChild.html"
+            }
         }
     }
 }
