@@ -100,6 +100,7 @@ angular.module('app', ['app.home', 'app.common', 'ngSanitize', 'ngAnimate', 'ui.
                 .otherwise(_defaultPath);
 
         }])
+
     .run(['$rootScope', 'mixins',
         function($rootScope, mixins) {
 
